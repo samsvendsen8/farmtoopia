@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack_4.png-52af490f3ccb9a5555bbe37e3512b5ef.stex"
+path="res://.import/crops-seeds.png-39595dd33a6c4642821c63e04919c064.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Attack_4.png"
-dest_files=[ "res://.import/Attack_4.png-52af490f3ccb9a5555bbe37e3512b5ef.stex" ]
+source_file="res://Sprites/crops-seeds.png"
+dest_files=[ "res://.import/crops-seeds.png-39595dd33a6c4642821c63e04919c064.stex" ]
 
 [params]
 

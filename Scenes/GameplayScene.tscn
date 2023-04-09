@@ -3,132 +3,6 @@
 [ext_resource path="res://Tilesets/64x64.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/moving.gd" type="Script" id=5]
 
-[sub_resource type="AtlasTexture" id=26]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1280, 2625, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1408, 2625, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1536, 2625, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=35]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1280, 2125, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=36]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1408, 2125, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=37]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1536, 2125, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=32]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1280, 2375, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1408, 2375, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1536, 2375, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1280, 2250, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1408, 2250, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=31]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1536, 2250, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=38]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1280, 2500, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=39]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1408, 2500, 128, 125 )
-
-[sub_resource type="AtlasTexture" id=40]
-flags = 4
-atlas = ExtResource( 1 )
-region = Rect2( 1536, 2500, 128, 125 )
-
-[sub_resource type="SpriteFrames" id=24]
-animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "New Anim",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
-"loop": true,
-"name": "walk_down",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
-"loop": true,
-"name": "walk_left",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
-"loop": true,
-"name": "walk_right",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 38 ), SubResource( 39 ), SubResource( 40 ) ],
-"loop": true,
-"name": "walk_up",
-"speed": 5.0
-} ]
-
-[sub_resource type="Animation" id=25]
-resource_name = "walk"
-tracks/0/type = "value"
-tracks/0/path = NodePath("AnimatedSprite:frames")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0.4 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ SubResource( 24 ) ]
-}
-
-[sub_resource type="CapsuleShape2D" id=9]
-radius = 31.3726
-
 [sub_resource type="TileSet" id=3]
 0/name = "64x64.png 0"
 0/texture = ExtResource( 1 )
@@ -806,11 +680,154 @@ resource_local_to_scene = true
 29/shapes = [  ]
 29/z_index = 0
 
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 2625, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1408, 2625, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 2625, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 2125, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1408, 2125, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 2125, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 2375, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1408, 2375, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 2375, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 2250, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1408, 2250, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 2250, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1280, 2500, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1408, 2500, 128, 125 )
+
+[sub_resource type="AtlasTexture" id=40]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 1536, 2500, 128, 125 )
+
+[sub_resource type="SpriteFrames" id=24]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "New Anim",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
+"loop": true,
+"name": "walk_down",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"loop": true,
+"name": "walk_left",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"loop": true,
+"name": "walk_right",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 38 ), SubResource( 39 ), SubResource( 40 ) ],
+"loop": true,
+"name": "walk_up",
+"speed": 5.0
+} ]
+
+[sub_resource type="Animation" id=25]
+resource_name = "walk"
+tracks/0/type = "value"
+tracks/0/path = NodePath("AnimatedSprite:frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ SubResource( 24 ) ]
+}
+
+[sub_resource type="CapsuleShape2D" id=9]
+radius = 31.3726
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 720, -680 )
 current = true
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 3 )
+format = 1
+tile_data = PoolIntArray( -917497, 1, 0, -917496, 4, 0, -917495, 4, 0, -917494, 4, 0, -917493, 4, 0, -917492, 3, 0, -917491, 0, 0, -851961, 5, 0, -851956, 5, 0, -786425, 5, 0, -786423, 14, 0, -786422, 14, 0, -786420, 5, 0, -720889, 5, 0, -720884, 5, 0, -655353, 5, 0, -655348, 5, 0, -655346, 13, 0, -589817, 12, 0, -589816, 7, 0, -589815, 7, 0, -589814, 6, 0, -589812, 5, 0 )
+
+[node name="TileMap3" type="TileMap" parent="."]
+z_index = -4
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -1441785, 0, 0, -1376230, 0, 0, -983033, -1073741822, 0, -983032, -1073741822, 0, -983031, -1073741822, 0, -983030, -1073741822, 0, -983029, -1073741822, 0, -983028, -1073741822, 0, -983027, -1073741822, 0, -983026, 2, 0, -983025, 2, 0, -983024, 2, 0, -917497, -1073741822, 0, -917496, -1073741822, 0, -917495, -1073741822, 0, -917494, -1073741822, 0, -917493, -1073741822, 0, -917492, -1073741822, 0, -917491, -1073741822, 0, -917490, 2, 0, -917489, 2, 0, -917488, 2, 0, -851961, -1073741822, 0, -851960, -1073741822, 0, -851959, -1073741822, 0, -851958, -1073741822, 0, -851957, 2, 0, -851956, 2, 0, -851955, -1073741822, 0, -851954, 2, 0, -851953, 2, 0, -851952, 2, 0, -786425, -1073741822, 0, -786424, -1073741822, 0, -786423, 3, 0, -786422, 3, 0, -786421, -1073741822, 0, -786420, 2, 0, -786419, -1073741822, 0, -786418, 2, 0, -786417, 2, 0, -786416, 2, 0, -720889, -1073741822, 0, -720888, -1073741822, 0, -720887, -1073741822, 0, -720886, -1073741822, 0, -720885, -1073741822, 0, -720884, 2, 0, -720883, -1073741822, 0, -720882, 2, 0, -720881, 2, 0, -720880, 2, 0, -655353, -1073741822, 0, -655352, -1073741822, 0, -655351, -1073741822, 0, -655350, -1073741822, 0, -655349, 0, 0, -655348, -1073741822, 0, -655347, 2, 0, -655346, 2, 0, -655345, 2, 0, -655344, 2, 0, -524291, 0, 0, -589817, -1073741822, 0, -589816, -1073741822, 0, -589815, 2, 0, -589814, 2, 0, -589813, 2, 0, -589812, 2, 0, -589811, 2, 0, -589810, 2, 0, -589809, 2, 0, -589808, 2, 0, -524281, -1073741822, 0, -524280, -1073741822, 0, -524279, 2, 0, -524278, 2, 0, -524277, 2, 0, -524276, 2, 0, -524275, 2, 0, -524274, 2, 0, -524273, 2, 0, -524272, 2, 0, -458745, -1073741822, 0, -458744, -1073741822, 0, -458743, 2, 0, -458742, 2, 0, -458741, 2, 0, -458740, 2, 0, -458739, 2, 0, -458738, 2, 0, -458737, 2, 0, -458736, 2, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -4
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -1441785, 0, 0, -1376230, 0, 0, -983033, -1073741822, 0, -983032, -1073741822, 0, -983031, -1073741822, 0, -983030, -1073741822, 0, -983029, -1073741822, 0, -983028, -1073741822, 0, -983027, -1073741822, 0, -983026, 2, 0, -983025, 2, 0, -983024, 2, 0, -917497, -1073741822, 0, -917496, -1073741822, 0, -917495, -1073741822, 0, -917494, -1073741822, 0, -917493, -1073741822, 0, -917492, -1073741822, 0, -917491, -1073741822, 0, -917490, 2, 0, -917489, 2, 0, -917488, 2, 0, -851961, -1073741822, 0, -851960, -1073741822, 0, -851959, -1073741822, 0, -851958, -1073741822, 0, -851957, 2, 0, -851956, 2, 0, -851955, -1073741822, 0, -851954, 2, 0, -851953, 2, 0, -851952, 2, 0, -786425, -1073741822, 0, -786424, -1073741822, 0, -786423, 3, 0, -786422, 3, 0, -786421, -1073741822, 0, -786420, 2, 0, -786419, -1073741822, 0, -786418, 2, 0, -786417, 2, 0, -786416, 2, 0, -720889, -1073741822, 0, -720888, -1073741822, 0, -720887, -1073741822, 0, -720886, -1073741822, 0, -720885, -1073741822, 0, -720884, 2, 0, -720883, -1073741822, 0, -720882, 2, 0, -720881, 2, 0, -720880, 2, 0, -655353, -1073741822, 0, -655352, -1073741822, 0, -655351, -1073741822, 0, -655350, -1073741822, 0, -655349, 0, 0, -655348, -1073741822, 0, -655347, 2, 0, -655346, 2, 0, -655345, 2, 0, -655344, 2, 0, -524291, 0, 0, -589817, -1073741822, 0, -589816, -1073741822, 0, -589815, 2, 0, -589814, 2, 0, -589813, 2, 0, -589812, 2, 0, -589811, 2, 0, -589810, 2, 0, -589809, 2, 0, -589808, 2, 0, -524281, -1073741822, 0, -524280, -1073741822, 0, -524279, 2, 0, -524278, 2, 0, -524277, 2, 0, -524276, 2, 0, -524275, 2, 0, -524274, 2, 0, -524273, 2, 0, -524272, 2, 0, -458745, -1073741822, 0, -458744, -1073741822, 0, -458743, 2, 0, -458742, 2, 0, -458741, 2, 0, -458740, 2, 0, -458739, 2, 0, -458738, 2, 0, -458737, 2, 0, -458736, 2, 0 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 script = ExtResource( 5 )
@@ -828,17 +845,6 @@ root_node = NodePath("../..")
 anims/walk = SubResource( 25 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-position = Vector2( 622, -698 )
+position = Vector2( 568, -648 )
 scale = Vector2( 1.59375, 1.4375 )
 shape = SubResource( 9 )
-
-[node name="TileMap2" type="TileMap" parent="."]
-tile_set = SubResource( 3 )
-format = 1
-tile_data = PoolIntArray( -917497, 1, 0, -917496, 4, 0, -917495, 4, 0, -917494, 4, 0, -917493, 4, 0, -917492, 3, 0, -917491, 0, 0, -851961, 5, 0, -851956, 5, 0, -786425, 5, 0, -786423, 14, 0, -786422, 14, 0, -786420, 5, 0, -720889, 5, 0, -720884, 5, 0, -655353, 5, 0, -655348, 5, 0, -655346, 13, 0, -589817, 12, 0, -589816, 7, 0, -589815, 7, 0, -589814, 6, 0, -589812, 5, 0 )
-
-[node name="TileMap" type="TileMap" parent="."]
-z_index = -4
-tile_set = SubResource( 1 )
-format = 1
-tile_data = PoolIntArray( -1441785, 0, 0, -1376230, 0, 0, -983033, -1073741822, 0, -983032, -1073741822, 0, -983031, -1073741822, 0, -983030, -1073741822, 0, -983029, -1073741822, 0, -983028, -1073741822, 0, -983027, -1073741822, 0, -983026, 2, 0, -983025, 2, 0, -983024, 2, 0, -917497, -1073741822, 0, -917496, -1073741822, 0, -917495, -1073741822, 0, -917494, -1073741822, 0, -917493, -1073741822, 0, -917492, -1073741822, 0, -917491, -1073741822, 0, -917490, 2, 0, -917489, 2, 0, -917488, 2, 0, -851961, -1073741822, 0, -851960, -1073741822, 0, -851959, -1073741822, 0, -851958, -1073741822, 0, -851957, 2, 0, -851956, 2, 0, -851955, -1073741822, 0, -851954, 2, 0, -851953, 2, 0, -851952, 2, 0, -786425, -1073741822, 0, -786424, -1073741822, 0, -786423, 3, 0, -786422, 3, 0, -786421, -1073741822, 0, -786420, 2, 0, -786419, -1073741822, 0, -786418, 2, 0, -786417, 2, 0, -786416, 2, 0, -720889, -1073741822, 0, -720888, -1073741822, 0, -720887, -1073741822, 0, -720886, -1073741822, 0, -720885, -1073741822, 0, -720884, 2, 0, -720883, -1073741822, 0, -720882, 2, 0, -720881, 2, 0, -720880, 2, 0, -655353, -1073741822, 0, -655352, -1073741822, 0, -655351, -1073741822, 0, -655350, -1073741822, 0, -655349, 0, 0, -655348, -1073741822, 0, -655347, 2, 0, -655346, 2, 0, -655345, 2, 0, -655344, 2, 0, -524291, 0, 0, -589817, -1073741822, 0, -589816, -1073741822, 0, -589815, 2, 0, -589814, 2, 0, -589813, 2, 0, -589812, 2, 0, -589811, 2, 0, -589810, 2, 0, -589809, 2, 0, -589808, 2, 0, -524281, -1073741822, 0, -524280, -1073741822, 0, -524279, 2, 0, -524278, 2, 0, -524277, 2, 0, -524276, 2, 0, -524275, 2, 0, -524274, 2, 0, -524273, 2, 0, -524272, 2, 0, -458745, -1073741822, 0, -458744, -1073741822, 0, -458743, 2, 0, -458742, 2, 0, -458741, 2, 0, -458740, 2, 0, -458739, 2, 0, -458738, 2, 0, -458737, 2, 0, -458736, 2, 0 )

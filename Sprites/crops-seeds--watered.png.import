@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hurt.png-c83c89c2d1945362502b032c3b910cb4.stex"
+path="res://.import/crops-seeds--watered.png-18831cbefd65f5ed2754c83efba05099.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Hurt.png"
-dest_files=[ "res://.import/Hurt.png-c83c89c2d1945362502b032c3b910cb4.stex" ]
+source_file="res://Sprites/crops-seeds--watered.png"
+dest_files=[ "res://.import/crops-seeds--watered.png-18831cbefd65f5ed2754c83efba05099.stex" ]
 
 [params]
 
